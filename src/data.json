@@ -1,0 +1,131 @@
+{
+  "meta": {
+    "mocha": {
+      "version": "9.1.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.0.0-alpha.0"
+    },
+    "marge": {
+      "options": {
+        "": true
+      },
+      "version": "5.2.0"
+    }
+  },
+  "results": {
+    "suites": [
+      {
+        "id": "j5jwKbVz7cr8AoFBBgV0w",
+        "title": "suite",
+        "fullFile": "/Users/agruber/Sites/mochawesome/test-functional/simple/simple-a.js",
+        "file": "/test-functional/simple/simple-a.js",
+        "duration": 1,
+        "isRoot": false,
+        "parent": "xPAQhMnHPuV5zzcSBb1B0"
+      },
+      {
+        "id": "xPAQhMnHPuV5zzcSBb1B0",
+        "title": "",
+        "fullFile": null,
+        "file": null,
+        "duration": 1,
+        "isRoot": true,
+        "parent": null
+      }
+    ],
+    "tests": [
+      {
+        "id": "IRr6_i1FKjkfaQ4rmDi35",
+        "title": "is a simple test - A1",
+        "fullTitle": "suite is a simple test - A1",
+        "duration": 1,
+        "timeout": 2000,
+        "timedOut": false,
+        "retries": -1,
+        "state": "failed",
+        "speed": null,
+        "context": null,
+        "code": "(1 + 1).should.equal(4);",
+        "err": {
+          "message": "AssertionError: expected 2 to be 4",
+          "estack": "AssertionError: expected 2 to be 4\n    at Assertion.fail (node_modules/should/cjs/should.js:275:17)\n    at Assertion.value (node_modules/should/cjs/should.js:356:19)\n    at Context.<anonymous> (test-functional/simple/simple-a.js:9:20)\n    at processImmediate (internal/timers.js:464:21)",
+          "diff": "- \"2\"\n+ \"4\"\n"
+        },
+        "parent": "j5jwKbVz7cr8AoFBBgV0w",
+        "type": "test"
+      },
+      {
+        "id": "wWRmvtv06XaS7sJAT7NGa",
+        "title": "is a simple test - A2",
+        "fullTitle": "suite is a simple test - A2",
+        "duration": 0,
+        "timeout": 2000,
+        "timedOut": false,
+        "retries": -1,
+        "state": "failed",
+        "speed": null,
+        "context": null,
+        "code": "(1 + 1).should.equal(4);",
+        "err": {
+          "message": "AssertionError: expected 2 to be 4",
+          "estack": "AssertionError: expected 2 to be 4\n    at Assertion.fail (node_modules/should/cjs/should.js:275:17)\n    at Assertion.value (node_modules/should/cjs/should.js:356:19)\n    at Context.<anonymous> (test-functional/simple/simple-a.js:13:20)\n    at processImmediate (internal/timers.js:464:21)",
+          "diff": "- \"2\"\n+ \"4\"\n"
+        },
+        "parent": "j5jwKbVz7cr8AoFBBgV0w",
+        "type": "test"
+      },
+      {
+        "id": "vpatCZxvsAyy8DgRXTwa4",
+        "title": "\"before all\" hook in \"suite\"",
+        "fullTitle": "suite \"before all\" hook in \"suite\"",
+        "duration": 0,
+        "timeout": 2000,
+        "timedOut": false,
+        "retries": -1,
+        "state": null,
+        "speed": null,
+        "context": null,
+        "code": "console.log('beforeEach');\n// console.log(nope);",
+        "err": null,
+        "parent": "j5jwKbVz7cr8AoFBBgV0w",
+        "type": "beforeAll"
+      },
+      {
+        "id": "u7RNblRyOJfjdOYxeuaVq",
+        "title": "is a simple test - B",
+        "fullTitle": "is a simple test - B",
+        "duration": 1,
+        "timeout": 2000,
+        "timedOut": false,
+        "retries": -1,
+        "state": "passed",
+        "speed": "fast",
+        "context": null,
+        "code": "(1 + 1).should.equal(2);",
+        "err": null,
+        "parent": "xPAQhMnHPuV5zzcSBb1B0",
+        "type": "test"
+      }
+    ]
+  },
+  "stats": {
+    "suites": 1,
+    "tests": 3,
+    "passes": 1,
+    "pending": 0,
+    "failures": 2,
+    "start": "2021-09-03T13:23:55.529Z",
+    "end": "2021-09-03T13:23:55.537Z",
+    "duration": 8
+  }
+}
